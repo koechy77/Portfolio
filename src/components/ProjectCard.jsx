@@ -1,10 +1,6 @@
-import { useState } from 'react';
-
-export default function ProjectCard({ project }) {
-    const [isPreviewOpen, setIsPreviewOpen] = useState(false);
-
+export default function ProjectCard({ project, isPreviewOpen, onTogglePreview }) {
     return (
-        <div className='bg-gray-800 rounded-lg p-4 max-w-md font-poppins'>
+        <div className='bg-gray-800 rounded-lg p-4 max-w-md w-full h-fit font-poppins flex flex-col'>
             <img
                 src={project.image}
                 alt={project.title}
@@ -18,17 +14,18 @@ export default function ProjectCard({ project }) {
                <button className='bg-gray-400 rounded-lg px-4 py-2'><a href={project.github} target="_blank" rel="noopener noreferrer">
                     Github
                 </a></button> 
-                <button className='bg-gray-400 rounded-lg px-4 py-2' onClick={() => setIsPreviewOpen(true)}>
-                    Preview
+                <button type="button" className='bg-gray-400 rounded-lg px-4 py-2' onClick={onTogglePreview}>
+                    {isPreviewOpen ? 'Close Preview' : 'Preview'}
                 </button>
             </div>
 
             {isPreviewOpen && (
-                <div className='mt-4'>
-                    <div className='flex justify-between items-center mb-2'>
+                <div className='mt-4 rounded-md overflow-hidden border border-gray-700'>
+                    <div className='flex justify-between items-center px-3 py-2 bg-gray-700/70'>
                         <span className='text-sm text-orange-200'>Preview</span>
                         <button
-                            onClick={() => setIsPreviewOpen(false)}
+                            type="button"
+                            onClick={onTogglePreview}
                             className='text-sm text-white hover:text-orange-300'
                         >
                             Close
@@ -37,7 +34,7 @@ export default function ProjectCard({ project }) {
                     <iframe
                         src={project.demoUrl}
                         title={project.title}
-                        className='w-full h-60 rounded-md border border-gray-700'
+                        className='w-full h-60 border-0'
                     />
                 </div>
             )}

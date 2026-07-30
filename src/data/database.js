@@ -28,25 +28,8 @@ const database = {
         image: `${import.meta.env.BASE_URL}media/IMG_4039.jpg`,
     },
     projects: [
-
         {
             id: 1,
-            title: "HTML/CSS Portfolio",
-            description: "A mini-portfolio built with just HTML, and CSS.",
-            image: `${import.meta.env.BASE_URL}Screenshot (73)(1).png`,
-            github: "https://github.com/koechy77/HTML-CSS-Portfolio",
-            demoUrl: "https://koechy77.github.io/HTML-CSS-Portfolio/",
-        },
-        {
-            id: 2,
-            title: "Tailwind Digital-Clock",
-            description: "A real-time digital clock project built with JavaScript Date API and Tailwind CSS utility classes. Includes dynamically updating time/date rendering and custom interface styling.",
-            image: `${import.meta.env.BASE_URL}Screenshot (75)(3).png`,
-            github: "https://github.com/koechy77/Tailwind-Digital-Clock",
-            demoUrl: "https://koechy77.github.io/Tailwind-Digital-Clock/",
-        },
-        {
-            id: 3,
             title: "Blog Site",
             description: "A practice blogsite built with react + vite, tailwindcss...",
             image: `${import.meta.env.BASE_URL}Screenshot (79)(1).png`,

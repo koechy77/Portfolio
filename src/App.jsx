@@ -1,18 +1,15 @@
 import Home from "./pages/Home";
-import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import database from "./data/database";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
-    <>
-    <ScrollToTop />
-    
-      <Navbar />
+    <div className="bg-gray-950">
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +18,6 @@ export default function App() {
       </Routes>
 
       <Footer contact={database.contact} />
-
-    </>
+    </div>
   );
 }
