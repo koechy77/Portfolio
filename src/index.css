@@ -25,7 +25,6 @@
   }
 
   .nav {
-    overflow: hidden;
     isolation: isolate;
   }
 
