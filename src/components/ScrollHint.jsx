@@ -18,7 +18,7 @@ export default function ScrollHint() {
   return (
     <div
       style={{ opacity }}
-      className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col gap-1 pointer-events-none text-orange-400"
+      className="absolute bottom-18 left-1/2 -translate-x-1/2 flex flex-col gap-1 pointer-events-none text-orange-400"
     >
       <div className="w-2 h-2 rotate-45 border-b-2 border-r-2 animate-bounce opacity-30" />
       <div className="w-2 h-2 rotate-45 border-b-2 border-r-2 animate-bounce opacity-60 [animation-delay:0.2s]" />

@@ -12,7 +12,7 @@ export default function About() {
     <main className="py-12">
       <div className="md:fixed left-1 top-4 mx-3 my-3">
         <button
-          className="block text-white "
+          className="block text-white cursor-pointer"
           aria-label="Open menu"
           onClick={() => setMenuOpen(!menuOpen)}
         >
@@ -21,7 +21,7 @@ export default function About() {
         {menuOpen && (
           <div className="absolute md:-left-2 md:top-full left-10 top-1  bg-gray-900/95 backdrop-blur-md rounded-2xl p-2 font-poppins shadow-2xl">
             <button
-              className="block w-full text-left p-2 text-white hover:bg-white/10 rounded-xl"
+              className="block w-full text-left p-2 text-white hover:bg-white/10 rounded-xl cursor-pointer"
               onClick={() => {
                 navigate("/");
                 setMenuOpen(false);
@@ -30,7 +30,7 @@ export default function About() {
               Home
             </button>
             <button
-              className="block w-full text-left p-2 text-white hover:bg-white/10 rounded-xl"
+              className="block w-full text-left p-2 text-white hover:bg-white/10 rounded-xl cursor-pointer"
               onClick={() => {
                 navigate("/contact");
                 setMenuOpen(false);

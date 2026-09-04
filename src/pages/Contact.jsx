@@ -27,7 +27,7 @@ export default function Contact() {
       <main className="min-h-screen font-poppins text-white overflow-x-hidden">
         <div className="md:fixed left-15 top-4 mx-3 my-4">
                 <button
-                  className="block text-white "
+                  className="block text-white cursor-pointer"
                   aria-label="Open menu"
                   onClick={() => setMenuOpen(!menuOpen)}
                 >
@@ -36,7 +36,7 @@ export default function Contact() {
                 {menuOpen && (
                   <div className="absolute md:-left-13 md:top-9 left-2 top-11 rounded-2xl p-2 font-poppins bg-gray-900/95 backdrop-blur-md shadow-2xl">
                     <button
-                      className="block w-full text-left p-2 text-white hover:bg-white/10 rounded-xl active:bg-white/10"
+                      className="block w-full text-left p-2 text-white hover:bg-white/10 rounded-xl active:bg-white/10 cursor-pointer"
                       onClick={() => {
                         navigate("/");
                         setMenuOpen(false);
@@ -45,7 +45,7 @@ export default function Contact() {
                       Home
                     </button>
                     <button
-                      className="block w-full text-left p-2 text-white hover:bg-white/10 active:bg-white/10 rounded-xl"
+                      className="block w-full text-left p-2 text-white hover:bg-white/10 active:bg-white/10 rounded-xl cursor-pointer"
                       onClick={() => {
                         navigate("/about");
                         setMenuOpen(false);
@@ -126,7 +126,7 @@ export default function Contact() {
                 className="px-4 py-2 bg-gray-800 rounded-lg"
               ></textarea>
 
-              <button type="submit" className="text-orange-400">
+              <button type="submit" className="text-orange-400 cursor-pointer">
                 send{" "}
                 <span className="inline-block transition-transform duration-300 group hover:translate-x-2">
                   💨

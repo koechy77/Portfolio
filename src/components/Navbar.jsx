@@ -9,7 +9,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-4 z-50 mx-auto w-[clamp(320px,92%,1200px)] rounded-2xl border border-white/20 bg-gray-950/80 backdrop-blur-md shadow-lg nav relative overflow-visible">
+    <nav className="sticky top-4 z-50 mx-auto w-[clamp(320px,92%,1200px)] rounded-2xl border border-white/20 bg-gray-950/80 backdrop-blur-md shadow-lg nav">
       <div className="flex items-center gap-3 px-4 py-3 nav-content">
         <ul className="hidden md:flex items-center gap-3 text-white font-poppins text-sm md:text-lg">
           <li className="rounded-xl border border-white/10">

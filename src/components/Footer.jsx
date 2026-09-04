@@ -4,13 +4,13 @@ import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
 export default function Footer({ contact }) {
   return (
     <>
-      <div className="text-white text-center py-8">
+      <div className="text-center py-8 text-gray-600">
         <div className="flex justify-center gap-6 my-6">
           {contact?.email && (
             <a
               href={`mailto:${contact.email}`}
               title="Email"
-              className="text-2xl sm:text-3xl hover:text-orange-600 transition"
+              className="text-2xl sm:text-3xl transition border p-1 rounded-lg hover:rotate-90"
             >
               <FaEnvelope />
             </a>
@@ -19,7 +19,7 @@ export default function Footer({ contact }) {
             <a
               href={`tel:${contact.phone}`}
               title="Phone"
-              className="text-2xl sm:text-3xl hover:text-orange-600 transition"
+              className="text-2xl sm:text-3xl border p-1 rounded-lg hover:rotate-90 transition"
             >
               <FaPhone />
             </a>
@@ -30,7 +30,7 @@ export default function Footer({ contact }) {
               target="_blank"
               rel="noopener noreferrer"
               title="LinkedIn"
-              className="text-2xl sm:text-3xl hover:text-orange-600 transition"
+              className="text-2xl sm:text-3xl border p-1 rounded-lg hover:rotate-90 transition"
             >
               <FaLinkedin />
             </a>
@@ -41,7 +41,7 @@ export default function Footer({ contact }) {
               target="_blank"
               rel="noopener noreferrer"
               title="GitHub"
-              className="text-2xl sm:text-3xl hover:text-orange-600 transition"
+              className="text-2xl sm:text-3xl border p-1 rounded-lg hover:rotate-90 transition"
             >
               <FaGithub />
             </a>
@@ -58,7 +58,7 @@ export default function Footer({ contact }) {
           </Link>
 
           <p className="text-sm mr-4">
-            &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
+            &copy; {new Date().getFullYear()} - kingkoech. All rights reserved.
           </p>
         </div>
       </div>
